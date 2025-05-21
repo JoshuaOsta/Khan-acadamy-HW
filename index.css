@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+nav {
+  padding-top: 1rem;
+  justify-content: space-evenly;
+  width: 128rem;
+  display: flex;
+  flex-direction: row;
+
+  input {
+    border-radius: 0.3rem;
+    border: none;
+    color: blue;
+    background-color: lightgray;
+  }
+
+  select {
+    background-color: white;
+    border: 0;
+    font-weight: 600;
+    color: blue;
+  }
+
+  img {
+    width: 14rem;
+  }
+
+  button {
+    background-color: white;
+    border: 0;
+    font-weight: 600;
+    color: blue;
+  }
+}
+
+
+
+#title {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  #mainImage {
+    padding-top: 10rem;
+  }
+
+  #imageText {
+    line-height: 3.5rem;
+    width: 31rem;
+    padding-top: 25rem;
+    background-position: bottom;
+    background:no-repeat url("underline.png");
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      padding-top: 3rem;
+      font-size: 1.5rem;
+    }
+
+    button {
+      margin-top: 3rem;
+      margin-bottom: 10.9rem;
+      border-radius: 0.5rem;
+      height: 3.5rem;
+      width: 7rem;
+      background-color: blue;
+      color: white;
+      border: 0;
+    }
+
+    .margin {
+      margin-left: 0.3rem;
+    }
+  }
+}
+
+#bottom {
+  align-self: flex-end;
+  width: 100%;
+}
